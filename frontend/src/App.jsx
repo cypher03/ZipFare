@@ -1,12 +1,13 @@
+import React from 'react'
 import './App.css'
-import navBar from './components/navBar.jsx'
-import landingPage from './components/landingPage.jsx'
+import NavBar from './components/navBar.jsx'
+import LandingPage from './components/landingPage.jsx'
 function App() {
 
   return (
     <>
-    <h1>dd</h1>
-    
+    <NavBar/>
+    <LandingPage/>
     </>
   )
 }
