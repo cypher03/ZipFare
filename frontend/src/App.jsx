@@ -12,11 +12,8 @@ function App() {
   return (
     <>
     <NavBar/>
-    {/* <LandingPage/> */}
-    {/* <LogIn/> */}
-    {/* <SignIn/> */}
-    {/* <Home/> */}
-    <UberStylePage/>
+    <Home/>
+    {/* <UberStylePage/> */}
     </>
   )
 }

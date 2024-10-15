@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { Card, CardContent, Typography, Box, Button } from '@mui/material';
-import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
 
-function ServiceCard({ fares }) {
+function ServiceCard({ fares, icon }) {
   const [selectedService, setSelectedService] = useState(null);
 
   const handleSelect = (service) => {
@@ -17,7 +16,7 @@ function ServiceCard({ fares }) {
     <Card
       sx={{
         width: '100%',
-        maxWidth: 250,
+        maxWidth: 280, // Increase max width of each card
         borderRadius: 3,
         textAlign: 'center',
         padding: 2,
@@ -28,7 +27,7 @@ function ServiceCard({ fares }) {
       <CardContent>
         {/* Vehicle Icon */}
         <Box sx={{ display: 'flex', justifyContent: 'center', marginBottom: 2 }}>
-          <DirectionsCarIcon sx={{ fontSize: 40, color: 'red' }} />
+          <img src={icon} alt="vehicle-icon" style={{ width: 50, height: 50 }} />
         </Box>
 
         {/* Fares List */}
