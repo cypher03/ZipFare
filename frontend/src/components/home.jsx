@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect } from 'react';
 import { Container, Box } from '@mui/material';
 import ServiceCard from './ServiceCard';
