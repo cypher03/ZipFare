@@ -24,7 +24,7 @@ export default function ButtonAppBar({ onThemeToggle, darkMode }) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontFamily: "'Inter', Arial, Helvetica, sans-serif", fontWeight: 700, fontSize: '38px' }}>
             Zipfare
           </Typography>
 
@@ -34,7 +34,7 @@ export default function ButtonAppBar({ onThemeToggle, darkMode }) {
             aria-label="toggle theme"
             onClick={onThemeToggle}
           >
-            {darkMode ? <Brightness7Icon /> : <Brightness4Icon />}
+            {darkMode ? <Brightness4Icon /> : <Brightness7Icon />}
           </IconButton>
 
           {/* <Button color="inherit">Zipfare</Button> */}
